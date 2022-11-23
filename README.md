@@ -1,0 +1,1 @@
+# Shopcore-Cordova-iOS
