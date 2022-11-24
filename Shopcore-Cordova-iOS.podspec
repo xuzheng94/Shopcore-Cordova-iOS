@@ -94,7 +94,7 @@ Pod::Spec.new do |spec|
     # 支持的ios最低版本
     spec.ios.deployment_target = "11.0"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.public_header_files = "Cordova.framework/Headers/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
