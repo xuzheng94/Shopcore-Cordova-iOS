@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/xuzheng94/Shopcore-Cordova-iOS.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "/Users/Sunny/Desktop/sdk测试/ios-git/Shopcore-Cordova-iOS", :tag => "#{spec.version}",:submodules => true  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,14 +87,15 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.source_files = "Cordova.framework/Headers/*.h"
+  # spec.source_files = "Cordova/Cordova.framework/Headers/*.{h,m}"
 
-    # 支持的平台及版本
-    spec.platform     = :ios, "11.0"
-    # 支持的ios最低版本
-    spec.ios.deployment_target = "11.0"
+  # 支持的平台及版本
+  spec.platform     = :ios, "11.0"
+  # 支持的ios最低版本
+  spec.ios.deployment_target = "11.0"
 
-  spec.public_header_files = "Cordova.framework/Headers/*.h"
+  # spec.public_header_files = "Cordova/Cordova.framework/Headers/*.h"
+  spec.vendored_frameworks = "Cordova.framework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,7 +133,7 @@ Pod::Spec.new do |spec|
 
   # spec.requires_arc = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)" }
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
