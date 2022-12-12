@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Shopcore-Cordova-iOS"
-  spec.version      = "1.0.7"
+  spec.version      = "1.1.0"
   spec.summary      = "Shopcore-Cordova-iOS-framework"
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "/Users/Sunny/Desktop/sdk测试/ios-git/Shopcore-Cordova-iOS", :tag => "#{spec.version}",:submodules => true  }
+  spec.source       = { :git => "https://github.com/xuzheng94/Shopcore-Cordova-iOS.git", :tag => "#{spec.version}"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   # spec.source_files = "Cordova/Cordova.framework/Headers/*.{h,m}"
 
   # 支持的平台及版本
-  spec.platform     = :ios, "11.0"
+  # spec.platform     = :ios, "11.0"
   # 支持的ios最低版本
   spec.ios.deployment_target = "11.0"
 
@@ -135,5 +135,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)" }
   # spec.dependency "JSONKit", "~> 1.4"
-
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
