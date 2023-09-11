@@ -24,11 +24,12 @@
 #import "CDVCommandDelegate.h"
 #import "CDVWebViewEngineProtocol.h"
 
-@interface UIView (org_apache_cordova_UIView_Extension)
 
-@property (nonatomic, weak) UIScrollView* scrollView;
-
-@end
+//@interface UIView (org_apache_cordova_UIView_Extension)
+//
+//@property (nonatomic, weak) UIScrollView* scrollView;
+//
+//@end
 
 extern NSString* const CDVPageDidLoadNotification;
 extern NSString* const CDVPluginHandleOpenURLNotification;

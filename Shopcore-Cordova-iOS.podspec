@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "Shopcore-Cordova-iOS"
-  spec.version      = "1.3.0"
+  spec.version      = "1.3.10"
   spec.summary      = "Shopcore-Cordova-iOS-framework"
   spec.description  = "Cordova-iOS-framework for Shopcore"
   spec.homepage     = "https://github.com/xuzheng94/Shopcore-Cordova-iOS.git"
